@@ -1,0 +1,14 @@
+name = "bishare-relay"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+MAX_FILE_SIZE = "524288000"   # 500MB
+EXPIRY_HOURS = "24"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "bishare-transfers"
+
+[placement]
+mode = "smart"
