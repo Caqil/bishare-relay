@@ -10,5 +10,9 @@ EXPIRY_HOURS = "24"
 binding = "BUCKET"
 bucket_name = "bishare-transfers"
 
+[[kv_namespaces]]
+binding = "ROOMS"
+id = "162783126bb448518355623999a7d85f"
+
 [placement]
 mode = "smart"
