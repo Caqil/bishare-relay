@@ -3,7 +3,7 @@ main = "src/index.ts"
 compatibility_date = "2024-12-01"
 
 [vars]
-MAX_FILE_SIZE = "524288000"   # 500MB
+MAX_FILE_SIZE = "2147483648"   # 2GB
 EXPIRY_HOURS = "24"
 
 [[r2_buckets]]
@@ -16,3 +16,6 @@ id = "162783126bb448518355623999a7d85f"
 
 [placement]
 mode = "smart"
+
+[triggers]
+crons = ["0 * * * *"]
